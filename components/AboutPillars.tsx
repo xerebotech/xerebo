@@ -49,7 +49,7 @@ export default function AboutPillars() {
                         <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                         Our Pillars
                     </motion.div>
-                    <h2 className="text-4xl md:text-7xl font-black text-dark-deepest tracking-tighter uppercase font-heading leading-[0.85]">
+                    <h2 className="text-4xl md:text-7xl font-black text-dark-deepest uppercase font-heading leading-[0.85]">
                         What We <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-orange/50">Stand For.</span>
                     </h2>
@@ -75,7 +75,7 @@ export default function AboutPillars() {
                                     <pillar.icon size={28} />
                                 </div>
 
-                                <h3 className="text-2xl font-black text-dark-deepest mb-4 tracking-tight font-heading group-hover:text-orange transition-colors uppercase leading-tight">
+                                <h3 className="text-2xl font-black text-dark-deepest mb-4 font-heading group-hover:text-orange transition-colors uppercase leading-tight">
                                     {pillar.title}
                                 </h3>
 
@@ -94,7 +94,7 @@ export default function AboutPillars() {
                     className="flex flex-col items-center text-center p-12 bg-white border border-dark/5 rounded-[3rem] shadow-xl relative overflow-hidden group"
                 >
                     <div className="absolute top-0 right-0 w-64 h-64 bg-orange/5 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2" />
-                    <h3 className="text-3xl font-black text-dark-deepest mb-6 font-heading tracking-tight uppercase">Align Your Business With Growth.</h3>
+                    <h3 className="text-3xl font-black text-dark-deepest mb-6 font-heading uppercase">Align Your Business With Growth.</h3>
                     <p className="text-dark-deepest/50 max-w-2xl mb-10 font-medium leading-relaxed">
                         These pillars aren&apos;t just inspiration — they are the performance boundaries we set for every campaign.
                         Ready to see how they apply to your specific industry?

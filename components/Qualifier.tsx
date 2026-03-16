@@ -41,7 +41,7 @@ export default function Qualifier() {
                         The Mutual Fit Test
                     </motion.div>
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 tracking-tighter font-heading leading-[1.1] md:leading-[0.9] text-balance">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
                         Is This <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Right</span> For You?
                     </h2>
 
@@ -71,7 +71,7 @@ export default function Qualifier() {
                                 </div>
                                 <div>
                                     <div className="text-[10px] font-black text-orange uppercase tracking-[0.3em] mb-1">Elite Partnership</div>
-                                    <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight font-heading">Strong Fit Indicators:</h3>
+                                    <h3 className="text-2xl md:text-3xl font-black uppercase font-heading">Strong Fit Indicators:</h3>
                                 </div>
                             </div>
 
@@ -107,7 +107,7 @@ export default function Qualifier() {
                             </div>
                             <div>
                                 <div className="text-[10px] font-black text-dark-deepest/40 uppercase tracking-[0.3em] mb-1">Qualifying Out</div>
-                                <h3 className="text-2xl md:text-3xl font-black text-dark-deepest uppercase tracking-tight opacity-20 font-heading group-hover/card:opacity-100 transition-opacity">NOT For You If:</h3>
+                                <h3 className="text-2xl md:text-3xl font-black text-dark-deepest uppercase opacity-20 font-heading group-hover/card:opacity-100 transition-opacity">NOT For You If:</h3>
                             </div>
                         </div>
 
@@ -150,7 +150,7 @@ export default function Qualifier() {
                         <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
                             <div className="max-w-xl">
                                 <div className="text-[10px] font-black text-orange uppercase tracking-[0.4em] mb-4">Final Validation</div>
-                                <h3 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight font-heading leading-tight">
+                                <h3 className="text-4xl md:text-5xl font-black text-white mb-6 font-heading leading-tight">
                                     If you checked every box,<br />
                                     <span className="text-orange italic">let&apos;s build your engine.</span>
                                 </h3>

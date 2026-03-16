@@ -73,8 +73,8 @@ export default function Pricing() {
 
 
 
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 tracking-tighter font-heading leading-[1.1] md:leading-[0.9] text-balance">
-                        Digital Marketing Packages for
+                    <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
+                        Digital Marketing Packages for<br />
                         <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent"> UAE Businesses</span>
                     </h2>
                     <div className="flex flex-col items-center gap-8">
@@ -115,7 +115,7 @@ export default function Pricing() {
                             )}
 
                             <div className="mb-8">
-                                <h3 className={`text-2xl font-black uppercase tracking-tight mb-2 ${pkg.highlight ? 'text-orange' : 'text-dark-deepest'}`}>
+                                <h3 className={`text-2xl font-black uppercase mb-2 ${pkg.highlight ? 'text-orange' : 'text-dark-deepest'}`}>
                                     {pkg.name}
                                 </h3>
                                 <div className="flex items-baseline gap-1 mb-1">

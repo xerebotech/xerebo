@@ -263,7 +263,7 @@ export default function FAQ() {
             FAQ
           </motion.div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark mb-8 tracking-tighter font-heading leading-[1.1] md:leading-[0.9] text-balance">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
             Common <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Questions</span>
           </h2>
 

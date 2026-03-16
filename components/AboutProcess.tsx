@@ -64,7 +64,7 @@ export default function AboutProcess() {
                         <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                         Our Process
                     </motion.div>
-                    <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase font-heading leading-[0.85] mb-8">
+                    <h2 className="text-4xl md:text-7xl font-black uppercase font-heading leading-[0.85] mb-8">
                         How We Work <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-orange/50">With You.</span>
                     </h2>
@@ -98,7 +98,7 @@ export default function AboutProcess() {
                                         <step.icon size={32} />
                                     </div>
                                     <div className="flex-grow">
-                                        <h3 className="text-2xl font-black mb-4 tracking-tight uppercase font-heading group-hover:text-orange transition-colors">
+                                        <h3 className="text-2xl font-black mb-4 uppercase font-heading group-hover:text-orange transition-colors">
                                             {step.title}
                                         </h3>
                                         <p className="text-white/50 leading-relaxed font-medium max-w-2xl px-0">
@@ -118,7 +118,7 @@ export default function AboutProcess() {
                     className="mt-20 flex flex-col items-center text-center p-12 rounded-[3rem] bg-orange text-white relative overflow-hidden shadow-2xl"
                 >
                     <div className="absolute top-0 right-0 w-full h-full bg-white/5 skew-x-[-15deg] transform translate-x-1/2 pointer-events-none" />
-                    <h3 className="text-3xl md:text-5xl font-black mb-6 font-heading tracking-tighter uppercase leading-tight">Your Engine Is Waiting.</h3>
+                    <h3 className="text-3xl md:text-5xl font-black mb-6 font-heading uppercase leading-tight">Your Engine Is Waiting.</h3>
                     <p className="text-white/80 max-w-2xl mb-10 text-lg font-medium leading-relaxed">
                         We don&apos;t just build campaigns; we build assets that grow with your company.
                         Let&apos;s map out your week 1 discovery today.

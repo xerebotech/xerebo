@@ -46,7 +46,7 @@ export default function AboutTeam() {
                             <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                             Our Team
                         </motion.div>
-                        <h2 className="text-4xl md:text-7xl font-black tracking-tighter uppercase font-heading leading-[0.85] mb-8">
+                        <h2 className="text-4xl md:text-7xl font-black uppercase font-heading leading-[0.85] mb-8">
                             Who's Behind <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-orange/50">The Engine.</span>
                         </h2>
@@ -70,7 +70,7 @@ export default function AboutTeam() {
                                         <role.icon size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-black mb-2 tracking-tight uppercase font-heading group-hover:text-orange transition-colors">
+                                        <h3 className="text-xl font-black mb-2 uppercase font-heading group-hover:text-orange transition-colors">
                                             {role.title}
                                         </h3>
                                         <p className="text-white/40 leading-relaxed text-sm font-bold">
@@ -111,7 +111,7 @@ export default function AboutTeam() {
                 >
                     <div className="absolute top-0 left-0 w-64 h-64 bg-orange/5 blur-3xl rounded-full -translate-x-1/2 -translate-y-1/2" />
                     <div className="max-w-xl">
-                        <h3 className="text-3xl font-black text-white mb-4 font-heading tracking-tight uppercase">Ready to Meet Your Growth Pod?</h3>
+                        <h3 className="text-3xl font-black text-white mb-4 font-heading uppercase">Ready to Meet Your Growth Pod?</h3>
                         <p className="text-white/40 font-medium leading-relaxed">
                             Every Xerebo client gets a dedicated team of 4 specialists.
                             Start a conversation today to see which pod fits your business goals.

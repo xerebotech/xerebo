@@ -63,11 +63,10 @@ export default function HowItWorks() {
             Performance Roadmap
           </motion.div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 tracking-tighter font-heading leading-[1.1] md:leading-[0.9] text-balance">
-            Zero to <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Qualified Leads</span><br />
-            in 30 Days.
-          </h2>
 
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
+            Zero to <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Qualified Leads</span> in 30 Days.
+          </h2>
           <p className="text-xl text-dark-deepest/50 leading-relaxed max-w-2xl mx-auto font-medium">
             A high-velocity timeline designed for UAE businesses that demand
             transparency over fluff and revenue over reports.
@@ -99,7 +98,7 @@ export default function HowItWorks() {
                       <span className="text-[10px] font-black uppercase tracking-widest text-dark-deepest/20">{step.phase}</span>
                     </div>
 
-                    <h3 className="text-xl font-black text-dark-deepest mb-4 group-hover/card:text-orange transition-colors uppercase tracking-tight">
+                    <h3 className="text-xl font-black text-dark-deepest mb-4 group-hover/card:text-orange transition-colors uppercase">
                       {step.title}
                     </h3>
 
@@ -136,7 +135,7 @@ export default function HowItWorks() {
 
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
               <div className="max-w-xl">
-                <h3 className="text-3xl md:text-4xl font-black text-white mb-4 tracking-tight">
+                <h3 className="text-3xl md:text-4xl font-black text-white mb-4">
                   After 90 days?
                 </h3>
                 <p className="text-white/40 text-lg">

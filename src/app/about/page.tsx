@@ -46,7 +46,7 @@ export default function AboutPage() {
                                 Final Step
                             </motion.div>
 
-                            <h2 className="text-5xl md:text-7xl font-black text-dark-deepest mb-8 font-heading tracking-tighter uppercase leading-[0.85]">
+                            <h2 className="text-5xl md:text-7xl font-black text-dark-deepest mb-8 font-heading uppercase leading-[0.85]">
                                 Ready To <br />
                                 <span className="text-orange">Stop The Waste?</span>
                             </h2>
@@ -94,7 +94,7 @@ export default function AboutPage() {
                             <div className="absolute -inset-4 bg-orange/20 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                             <div className="relative p-12 rounded-[3.5rem] bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-orange/10 blur-3xl rounded-full" />
-                                <h3 className="text-3xl font-black text-dark-deepest mb-6 font-heading tracking-tight uppercase">90-Day <br />Guarantee</h3>
+                                <h3 className="text-3xl font-black text-dark-deepest mb-6 font-heading uppercase">90-Day <br />Guarantee</h3>
                                 <p className="text-dark-deepest/50 font-medium mb-8 leading-relaxed">
                                     If we don&apos;t deliver the agreed volume of qualified leads within 90 days, we stop
                                     charging. No hidden fees. No lengthy cancellations. We perform or we leave.

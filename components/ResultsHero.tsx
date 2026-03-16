@@ -30,7 +30,7 @@ export default function ResultsHero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="text-5xl md:text-8xl lg:text-9xl font-black text-dark-deepest tracking-tighter uppercase font-heading leading-[0.85] mb-12"
+                    className="text-5xl md:text-8xl lg:text-9xl font-black text-dark-deepest uppercase font-heading leading-[0.85] mb-12"
                 >
                     Lead Generation <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-orange-muted">Case Studies.</span>

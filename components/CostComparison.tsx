@@ -26,7 +26,7 @@ export default function CostComparison() {
                         <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                         The Math of Marketing
                     </motion.div>
-                    <h2 className="text-4xl md:text-7xl font-black leading-[0.85] tracking-tighter uppercase font-heading mb-8">
+                    <h2 className="text-4xl md:text-7xl font-black leading-[0.85] uppercase font-heading mb-8">
                         The Real <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange/50 to-white/20">
                             Cost Comparison.
@@ -46,8 +46,8 @@ export default function CostComparison() {
                             <X className="text-white/20 w-12 h-12" />
                         </div>
 
-                        <h3 className="text-2xl font-black mb-2 uppercase tracking-tight font-heading text-white/40">Other Agencies</h3>
-                        <p className="text-4xl font-black mb-8 text-white/20 tracking-tight font-heading">AED 8K – 15K<span className="text-sm font-bold ml-1">/Month</span></p>
+                        <h3 className="text-2xl font-black mb-2 uppercase font-heading text-white/40">Other Agencies</h3>
+                        <p className="text-4xl font-black mb-8 text-white/20 font-heading">AED 8K – 15K<span className="text-sm font-bold ml-1">/Month</span></p>
 
                         <div className="space-y-6 mb-12">
                             {[
@@ -67,7 +67,7 @@ export default function CostComparison() {
 
                         <div className="pt-10 border-t border-white/5 mt-auto">
                             <p className="text-white/30 font-black uppercase tracking-widest text-[10px] mb-2 font-heading">Total Yearly Burn</p>
-                            <p className="text-3xl font-black text-white/10 tracking-tighter font-heading">AED 96K – 180K / YEAR</p>
+                            <p className="text-3xl font-black text-white/10 font-heading">AED 96K – 180K / YEAR</p>
                         </div>
                     </motion.div>
 
@@ -86,8 +86,8 @@ export default function CostComparison() {
                             Integrated Value
                         </div>
 
-                        <h3 className="text-2xl font-black mb-2 uppercase tracking-tight font-heading text-white">The Lead Engine</h3>
-                        <p className="text-4xl font-black mb-8 text-orange tracking-tight font-heading italic">Performance Tier<span className="text-sm font-bold text-white/60 ml-2 font-secondary not-italic">Fix Rate + Scale</span></p>
+                        <h3 className="text-2xl font-black mb-2 uppercase font-heading text-white">The Lead Engine</h3>
+                        <p className="text-4xl font-black mb-8 text-orange font-heading italic">Performance Tier<span className="text-sm font-bold text-white/60 ml-2 font-secondary not-italic">Fix Rate + Scale</span></p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
                             {[
@@ -108,7 +108,7 @@ export default function CostComparison() {
                                     className="flex items-start gap-3"
                                 >
                                     <Check size={18} className="text-orange mt-1 flex-shrink-0" />
-                                    <span className="font-bold text-lg leading-tight tracking-tight">{item}</span>
+                                    <span className="font-bold text-lg leading-tight">{item}</span>
                                 </motion.div>
                             ))}
                         </div>
@@ -116,7 +116,7 @@ export default function CostComparison() {
                         <div className="pt-10 border-t border-orange/20 mt-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                             <div>
                                 <p className="text-orange font-black uppercase tracking-widest text-[10px] mb-2 font-heading">The Result</p>
-                                <p className="text-1xl font-black text-white tracking-tighter font-heading uppercase">No Waste. High Growth.</p>
+                                <p className="text-1xl font-black text-white font-heading uppercase">No Waste. High Growth.</p>
                             </div>
                             <Link href="/packages">
                                 <CreativeButton

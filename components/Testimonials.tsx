@@ -50,7 +50,7 @@ export default function Testimonials() {
                         <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                         Client Success
                     </motion.div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 tracking-tighter font-heading leading-[1.1] md:leading-[0.9] text-balance">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
                         What Our <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Clients Actually Say</span>.
                     </h2>
                     <p className="text-xl text-dark-deepest/50 leading-relaxed border-l-2 border-orange/20 pl-6">
@@ -89,7 +89,7 @@ export default function Testimonials() {
                                         {t.icon}
                                     </div>
                                     <div>
-                                        <h4 className="font-black text-dark-deepest text-lg tracking-tight">{t.name}</h4>
+                                        <h4 className="font-black text-dark-deepest text-lg">{t.name}</h4>
                                         <p className="text-xs font-bold text-dark-deepest/40 uppercase tracking-widest">{t.role} @ {t.company}</p>
                                     </div>
                                 </div>

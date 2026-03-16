@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { ContactModalProvider } from "@/context/ContactModalContext";
 import ContactModal from "@/components/ContactModal";
+import CookieBanner from "@/components/CookieBanner";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-primary",
@@ -57,6 +58,7 @@ export default function RootLayout({
         <ContactModalProvider>
           {children}
           <ContactModal />
+          <CookieBanner />
         </ContactModalProvider>
       </body>
     </html>

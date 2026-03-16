@@ -85,7 +85,7 @@ export default function CaseStudyGrids() {
                                         <p className="text-xs font-black uppercase tracking-[0.3em] mb-4 opacity-70 font-heading">
                                             {study.industry}
                                         </p>
-                                        <h3 className="text-7xl md:text-8xl font-black font-heading tracking-tighter mb-2 leading-none">
+                                        <h3 className="text-7xl md:text-8xl font-black font-heading mb-2 leading-none">
                                             {study.mainStat}
                                         </h3>
                                         <p className="text-lg font-black uppercase tracking-widest font-heading">
@@ -97,7 +97,7 @@ export default function CaseStudyGrids() {
                                 {/* Content Side */}
                                 <div className="lg:w-2/3 p-12 md:p-16 flex flex-col justify-center">
                                     <div className="max-w-xl">
-                                        <h4 className="text-3xl md:text-4xl font-black text-dark-deepest mb-6 tracking-tight leading-tight uppercase font-heading">
+                                        <h4 className="text-3xl md:text-4xl font-black text-dark-deepest mb-6 leading-tight uppercase font-heading">
                                             {study.title}
                                         </h4>
                                         <p className="text-dark-deepest/50 text-lg leading-relaxed mb-10 font-medium">
@@ -111,7 +111,7 @@ export default function CaseStudyGrids() {
                                                         <stat.icon size={16} />
                                                         <span className="text-[10px] font-black uppercase tracking-widest font-heading">{stat.label}</span>
                                                     </div>
-                                                    <p className="text-2xl font-black text-dark-deepest font-heading tracking-tight">
+                                                    <p className="text-2xl font-black text-dark-deepest font-heading">
                                                         {stat.value}
                                                     </p>
                                                 </div>

@@ -31,7 +31,7 @@ export default function ContactForm() {
               Contact Us
             </motion.div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tighter font-heading leading-[0.9]">
+            <h2 className="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 font-heading leading-[0.9]">
               Let's Build <br />
               <span className="bg-gradient-to-r from-orange to-white bg-clip-text text-transparent">Your Engine.</span>
             </h2>

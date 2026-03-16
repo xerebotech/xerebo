@@ -44,7 +44,7 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="flex flex-col justify-center text-center lg:text-left items-center lg:items-start"
           >
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-[1.1] md:leading-[1] mb-8 font-heading tracking-tighter text-balance">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black leading-[1.1] md:leading-[1] mb-8 font-heading text-balance">
               Dubai's Lead Generation Agency   That         {' '}
               <span className="relative inline-block text-orange">
                 <span className="relative z-10">Guarantees </span>

@@ -105,7 +105,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                 <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center">
                     <CheckCircle2 className="w-8 h-8 text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-white uppercase tracking-tight">You&apos;re Booked In!</h3>
+                <h3 className="text-xl font-bold text-white uppercase">You&apos;re Booked In!</h3>
                 <p className="text-gray-400 max-w-xs font-medium">
                     We&apos;ve received your details and will reach out within 24 hours.
                 </p>
@@ -117,7 +117,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
         <div className={`space-y-6 ${className}`}>
             {!hideExtras && (
                 <div className="text-center mb-8">
-                    <h3 className="text-2xl font-black text-white uppercase tracking-tight mb-1">Book a Strategy Call</h3>
+                    <h3 className="text-2xl font-black text-white uppercase mb-1">Book a Strategy Call</h3>
                     <p className="text-white/40 text-sm font-bold uppercase tracking-widest">30 minutes. Free. We'll call you within 24 hours.</p>
                 </div>
             )}

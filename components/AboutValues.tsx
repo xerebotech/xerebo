@@ -36,7 +36,7 @@ export default function AboutValues() {
                         <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                         Our Values
                     </motion.div>
-                    <h2 className="text-4xl md:text-7xl font-black text-dark-deepest tracking-tighter uppercase font-heading leading-[0.85] mb-8">
+                    <h2 className="text-4xl md:text-7xl font-black text-dark-deepest uppercase font-heading leading-[0.85] mb-8">
                         Engineered <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange to-orange/50">For Results.</span>
                     </h2>
@@ -55,7 +55,7 @@ export default function AboutValues() {
                             <div className="w-20 h-20 rounded-3xl bg-orange/5 flex items-center justify-center text-orange mx-auto mb-8 group-hover:bg-orange group-hover:text-white transition-all duration-500 group-hover:rotate-6 group-hover:scale-110">
                                 <value.icon size={36} />
                             </div>
-                            <h3 className="text-2xl font-black text-dark-deepest mb-4 tracking-tight uppercase font-heading">
+                            <h3 className="text-2xl font-black text-dark-deepest mb-4 uppercase font-heading">
                                 {value.title}
                             </h3>
                             <p className="text-dark-deepest/50 leading-relaxed font-bold">

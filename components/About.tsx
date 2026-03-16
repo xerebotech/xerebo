@@ -40,13 +40,7 @@ const About = () => {
     return (
         <section id="about" className="relative min-h-screen flex flex-col pt-32 pb-16 overflow-hidden font-secondary bg-dark-deepest">
 
-            {/* ── Full-bleed background elements ── */}
-            <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                    background: 'linear-gradient(135deg, var(--deepest) 55%, var(--light) 55%)',
-                }}
-            />
+
 
             {/* Grid texture for "full page" feel */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(254,119,0,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(254,119,0,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
@@ -85,7 +79,7 @@ const About = () => {
 
                         {/* Headline — light on dark */}
                         <h1
-                            className="font-heading font-black uppercase tracking-tighter leading-[0.92] mb-10 text-light"
+                            className="font-heading font-black uppercase leading-[0.92] mb-10 text-light"
                             style={{
                                 fontSize: 'clamp(3rem, 6vw, 5.5rem)',
                             }}
@@ -141,7 +135,7 @@ const About = () => {
                             </div>
                             <div className="text-light/40 font-heading">
                                 <p className="text-[10px] uppercase font-black tracking-widest leading-none mb-1">Lead Velocity</p>
-                                <p className="text-sm font-bold text-light/70 tracking-tight">500+ Sales-Ready Leads This Month</p>
+                                <p className="text-sm font-bold text-light/70">500+ Sales-Ready Leads This Month</p>
                             </div>
                         </div>
                     </motion.div>
@@ -191,7 +185,7 @@ const About = () => {
                                             </div>
                                             <div>
                                                 <p className="text-[10px] font-black uppercase tracking-[0.3em] font-heading text-light/40">System Status</p>
-                                                <p className="text-base font-black font-heading text-light tracking-tight">Lead Engine Active</p>
+                                                <p className="text-base font-black font-heading text-light">Lead Engine Active</p>
                                             </div>
                                         </div>
                                         <div className="relative flex items-center gap-2 px-4 py-1.5 rounded-full text-[11px] font-black uppercase tracking-[0.15em] bg-green-500/10 border border-green-500/25 text-green-400">
@@ -206,7 +200,7 @@ const About = () => {
                                         <p className="text-xs font-black uppercase tracking-[0.4em] mb-3 font-heading text-orange">
                                             Live Pipeline
                                         </p>
-                                        <h3 className="font-black tracking-tighter font-heading text-light leading-none mb-6" style={{ fontSize: '4.5rem' }}>
+                                        <h3 className="font-black font-heading text-light leading-none mb-6" style={{ fontSize: '4.5rem' }}>
                                             AED 2.4M
                                         </h3>
 
@@ -260,7 +254,7 @@ const About = () => {
                                     <TrendingUp size={22} color="white" />
                                 </div>
                                 <p className="text-[10px] font-black uppercase tracking-[0.25em] font-heading text-white/70 mb-1">Avg ROAS</p>
-                                <p className="text-4xl font-black font-heading text-white tracking-tighter">4.2×</p>
+                                <p className="text-4xl font-black font-heading text-white">4.2×</p>
                             </motion.div>
 
                             {/* ── Conversion Meter ── */}
@@ -278,7 +272,7 @@ const About = () => {
                                     </div>
                                     <div>
                                         <p className="text-[10px] font-black uppercase tracking-[0.25em] font-heading text-dark/40">Conv. Rate</p>
-                                        <p className="text-xl font-black font-heading text-dark-deepest tracking-tight">8.4%</p>
+                                        <p className="text-xl font-black font-heading text-dark-deepest">8.4%</p>
                                     </div>
                                 </div>
                                 <div className="h-2 w-full rounded-full overflow-hidden bg-dark/5 shadow-inner">
@@ -306,7 +300,7 @@ const About = () => {
                                 </div>
                                 <div>
                                     <p className="text-[10px] font-black uppercase tracking-[0.2em] font-heading text-light/40">Rev. Growth</p>
-                                    <p className="text-2xl font-black font-heading text-green-400 tracking-tighter">+240%</p>
+                                    <p className="text-2xl font-black font-heading text-green-400">+240%</p>
                                 </div>
                             </motion.div>
 
@@ -357,7 +351,7 @@ const About = () => {
                                 transition={{ delay: 0.7 + (i * 0.1) }}
                                 className="text-center md:text-left group"
                             >
-                                <p className="text-2xl md:text-3xl font-black text-orange mb-1 font-heading group-hover:text-dark transition-colors tracking-tighter uppercase">
+                                <p className="text-2xl md:text-3xl font-black text-orange mb-1 font-heading group-hover:text-dark transition-colors uppercase">
                                     {stat.value}
                                 </p>
                                 <p className="text-[9px] md:text-[10px] text-dark/30 uppercase font-black tracking-[0.3em] font-heading">

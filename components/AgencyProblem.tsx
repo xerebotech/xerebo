@@ -63,7 +63,7 @@ const AgencyProblem = () => {
                             <span className="w-2 h-2 rounded-full bg-orange animate-pulse shadow-[0_0_10px_rgba(254,119,0,0.5)]" />
                             The Hard Truth
                         </motion.div>
-                        <h2 className="text-4xl md:text-7xl font-black leading-[0.85] tracking-tighter uppercase font-heading">
+                        <h2 className="text-4xl md:text-7xl font-black leading-[0.85] uppercase font-heading">
                             Why Most Marketing Agencies in Dubai <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange via-orange/50 to-white/20">
                                 Fail Their Clients.
@@ -91,7 +91,7 @@ const AgencyProblem = () => {
                             <div className="relative z-10">
                                 <span className="text-orange/30 font-mono text-xs mb-8 block">ERROR_CODE: {problem.id}</span>
                                 <problem.icon size={32} className={`mb-6 transition-colors duration-500 ${hoveredIndex === index ? 'text-orange' : 'text-white/40'}`} />
-                                <h3 className="text-2xl font-bold mb-4 tracking-tight font-heading group-hover:text-orange transition-colors">{problem.title}</h3>
+                                <h3 className="text-2xl font-bold mb-4 font-heading group-hover:text-orange transition-colors">{problem.title}</h3>
                                 <p className="text-white/60 leading-relaxed mb-8 min-h-[80px]">
                                     {problem.description}
                                 </p>

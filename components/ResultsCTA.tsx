@@ -25,7 +25,7 @@ export default function ResultsCTA() {
                     Next Step
                 </motion.div>
 
-                <h2 className="text-4xl md:text-7xl font-black mb-8 font-heading tracking-tighter uppercase leading-[0.85]">
+                <h2 className="text-4xl md:text-7xl font-black mb-8 font-heading uppercase leading-[0.85]">
                     Your Results <br />
                     <span className="text-dark-deepest">Are Next.</span>
                 </h2>
