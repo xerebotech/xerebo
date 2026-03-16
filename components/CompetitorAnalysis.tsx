@@ -305,6 +305,7 @@ export default function CompetitorAnalysis() {
                                                         required
                                                     />
                                                     <PhoneInput
+                                                        id="competitor-phone"
                                                         value={mobile}
                                                         onChange={setMobile}
                                                         placeholder="Mobile Number *"

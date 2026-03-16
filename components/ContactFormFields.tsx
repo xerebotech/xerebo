@@ -122,11 +122,12 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                 </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4" id="contact-form">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="flex flex-col gap-1.5">
                         <label className="text-[10px] font-black uppercase tracking-widest text-white/40 px-1">First Name *</label>
                         <input
+                            id="firstName"
                             type="text"
                             name="firstName"
                             value={formData.firstName}
@@ -140,6 +141,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                         <label className="text-[10px] font-black uppercase tracking-widest text-white/40 px-1">Last Name *</label>
                         <input
                             type="text"
+                            id="lastName"
                             name="lastName"
                             value={formData.lastName}
                             onChange={handleChange}
@@ -154,6 +156,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                     <label className="text-[10px] font-black uppercase tracking-widest text-white/40 px-1">Email *</label>
                     <input
                         type="email"
+                        id="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
@@ -167,6 +170,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                     <label className="text-[10px] font-black uppercase tracking-widest text-white/40 px-1">Phone / WhatsApp *</label>
                     <PhoneInput
                         value={phone}
+                        id="phone"
                         onChange={setPhone}
                         placeholder="+971 50 000 0000"
                         required
@@ -177,6 +181,7 @@ export default function ContactFormFields({ className, hideExtras = false }: { c
                     <label className="text-[10px] font-black uppercase tracking-widest text-white/40 px-1">Monthly Ad Budget *</label>
                     <select
                         name="budget"
+                        id="budget"
                         value={formData.budget}
                         onChange={handleChange}
                         required

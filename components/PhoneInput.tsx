@@ -6,6 +6,7 @@ import 'react-phone-number-input/style.css';
 import './PhoneInput.css';
 
 interface PhoneInputProps {
+    id: string;
     value: string;
     onChange: (value: string) => void;
     placeholder?: string;
@@ -14,6 +15,7 @@ interface PhoneInputProps {
 }
 
 export default function PhoneInput({
+    id,
     value,
     onChange,
     placeholder = 'Phone Number *',
@@ -44,7 +46,7 @@ export default function PhoneInput({
             onChange={(val: string | undefined) => onChange(val ?? '')}
             placeholder={placeholder}
             className={`xerebo-phone-input ${className}`}
-            numberInputProps={{ required }}
+            numberInputProps={{ id, required }}
         />
     );
 }
