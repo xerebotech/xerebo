@@ -70,10 +70,9 @@ export default function AboutPage() {
                                     onClick={() => openModal('About Footer CTA: Audit')}
                                     variant="outline"
                                     size="lg"
-                                    className="w-full sm:w-auto px-10 py-6 text-xl border-dark-deepest/10 text-dark-deepest hover:bg-dark-deepest/5"
+                                    className="w-full sm:w-auto px-10 py-6 text-xl border-dark-deepest/10 text-dark-deepest hover:bg-orange/5"
                                 >
                                     Get Analysis
-                                    <ArrowRight className="ml-2" />
                                 </CreativeButton>
                             </div>
 

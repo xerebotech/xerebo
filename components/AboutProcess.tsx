@@ -131,7 +131,6 @@ export default function AboutProcess() {
                             className="bg-dark-deepest text-white border-dark-deepest px-10 py-5 text-lg shadow-xl"
                         >
                             Start Your Discovery
-                            <ArrowRight className="ml-2" />
                         </CreativeButton>
                         <button
                             onClick={() => window.location.href = '/results'}

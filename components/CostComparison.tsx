@@ -116,7 +116,7 @@ export default function CostComparison() {
                         <div className="pt-10 border-t border-orange/20 mt-auto flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
                             <div>
                                 <p className="text-orange font-black uppercase tracking-widest text-[10px] mb-2 font-heading">The Result</p>
-                                <p className="text-3xl font-black text-white tracking-tighter font-heading uppercase">No Waste. High Growth.</p>
+                                <p className="text-1xl font-black text-white tracking-tighter font-heading uppercase">No Waste. High Growth.</p>
                             </div>
                             <Link href="/packages">
                                 <CreativeButton
@@ -125,7 +125,6 @@ export default function CostComparison() {
                                     className="px-8 py-4 shadow-[0_15px_30px_rgba(254,119,0,0.4)] group"
                                 >
                                     Compare Packages
-                                    <ArrowUpRight size={18} className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                 </CreativeButton>
                             </Link>
                         </div>

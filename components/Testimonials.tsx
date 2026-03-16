@@ -118,7 +118,6 @@ export default function Testimonials() {
                             className="px-10 py-6 text-lg shadow-[0_20px_50px_rgba(254,119,0,0.15)] group"
                         >
                             See all case studies with full numbers
-                            <ArrowRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                         </CreativeButton>
                     </Link>
                 </motion.div>

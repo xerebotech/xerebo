@@ -124,7 +124,6 @@ const About = () => {
                                 className="w-full sm:w-auto px-10 py-6 text-lg border-light/20 text-light hover:bg-light/5"
                             >
                                 Get Free Analysis
-                                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                             </CreativeButton>
                         </div>
 

@@ -59,7 +59,6 @@ export default function ResultsHero() {
                     >
                         <Calendar className="mr-2 w-5 h-5" />
                         Book Your Strategy Call
-                        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </CreativeButton>
 
                     <CreativeButton

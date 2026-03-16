@@ -106,7 +106,6 @@ export default function AboutPillars() {
                         className="px-10 py-5 text-lg shadow-[0_15px_40px_rgba(254,119,0,0.2)]"
                     >
                         Book a Pillar Strategy Session
-                        <ArrowRight className="ml-2" />
                     </CreativeButton>
                 </motion.div>
             </div>

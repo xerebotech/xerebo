@@ -42,7 +42,6 @@ export default function ResultsCTA() {
                 >
                     <Calendar className="mr-3 w-6 h-6" />
                     Book Your Strategy Call
-                    <ArrowRight className="ml-3 w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </CreativeButton>
 
                 <p className="mt-8 text-white/60 text-sm font-bold uppercase tracking-widest">

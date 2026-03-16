@@ -126,7 +126,6 @@ export default function AboutTeam() {
                             icon={Sparkles}
                         >
                             Meet Your Pod
-                            <ArrowRight className="ml-2" />
                         </CreativeButton>
                     </div>
                 </motion.div>

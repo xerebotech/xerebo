@@ -162,7 +162,6 @@ const AgencyProblem = () => {
                         className="group px-12 py-6 md:py-8 text-xl md:text-2xl shadow-[0_20px_50px_rgba(254,119,0,0.3)]"
                     >
                         Get Your Free Revenue Audit
-                        <ArrowRight className="ml-2 group-hover:translate-x-2 transition-transform" />
                     </CreativeButton>
                     <p className="mt-8 text-white/40 flex items-center justify-center gap-2 text-sm italic">
                         <ShieldAlert size={14} /> No fluff. No sales pitch. Just your data, audited.
