@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@source "../../components";
+
+@theme {
+  --color-orange: var(--orange);
+  --color-orange-muted: var(--orange-muted);
+  --color-orange-light: var(--orange-light);
+  --color-dark: var(--dark);
+  --color-dark-deepest: var(--deepest);
+  --color-light: var(--light);
+  --color-warm-gray-200: var(--warm-gray-200);
+  --color-warm-gray-300: var(--warm-gray-300);
+  --color-warm-gray-500: var(--warm-gray-500);
+}
+
+:root {
+  --orange: #FE7700;
+  --orange-muted: #FFB366;
+  --orange-light: #FFF4E6;
+  --dark: #3E3939;
+  --deepest: #2C2727;
+  --light: #F6F4F4;
+  --warm-gray-200: #E0DCDA;
+  --warm-gray-300: #C7C2BF;
+  --warm-gray-500: #8A8380;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-color: #0a0a0a;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

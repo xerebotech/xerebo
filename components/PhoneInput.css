@@ -1,0 +1,99 @@
+/* Xerebo branded phone input styles */
+.xerebo-phone-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    padding: 0 1.25rem;
+    transition: border-color 0.2s;
+}
+
+.xerebo-phone-input:focus-within {
+    border-color: #fe7700;
+    outline: none;
+}
+
+/* Country selector row */
+.xerebo-phone-input .PhoneInputCountry {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 8px;
+    position: relative;
+}
+
+/* Hide the native select but keep it clickable */
+.xerebo-phone-input .PhoneInputCountrySelect {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* Force dark background on the dropdown list */
+    background-color: #1a1817;
+    color: white;
+}
+
+/* Style the native dropdown options */
+.xerebo-phone-input .PhoneInputCountrySelect option {
+    background-color: #1a1817;
+    color: white;
+}
+
+.xerebo-phone-input .PhoneInputCountryIcon {
+    font-size: 1.3rem;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.xerebo-phone-input .PhoneInputCountrySelectArrow {
+    color: #9ca3af;
+    font-size: 0.65rem;
+    pointer-events: none;
+    margin-left: 2px;
+}
+
+/* The text input */
+.xerebo-phone-input .PhoneInputInput {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 0.875rem;
+    padding: 1rem 0;
+    outline: none;
+    width: 100%;
+}
+
+.xerebo-phone-input .PhoneInputInput::placeholder {
+    color: #9ca3af;
+}
+
+/* ── Dark variant (Competitor unlock form) ── */
+.xerebo-phone-input-dark {
+    background: #0f0e0d !important;
+    border-color: #374151 !important;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+.xerebo-phone-input-dark .PhoneInputInput {
+    font-size: 0.8rem;
+    padding: 0.625rem 0;
+}
+
+.xerebo-phone-input-dark .PhoneInputCountrySelect {
+    background-color: #111 !important;
+}
+
+.xerebo-phone-input-dark .PhoneInputCountrySelect option {
+    background-color: #111;
+    color: white;
+}
+
+.xerebo-phone-input-dark:focus-within {
+    border-color: #fe7700 !important;
+}
