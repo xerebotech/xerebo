@@ -31,7 +31,8 @@ export default function CookieBanner() {
         }
 
         // Also push custom event for GTM triggers
-        if (typeof window !== 'undefined' && window.dataLayer) {
+        if (typeof window !== 'undefined') {
+            window.dataLayer = window.dataLayer || [];
             window.dataLayer.push({
                 event: 'consent_choice',
                 consent_status: status,
