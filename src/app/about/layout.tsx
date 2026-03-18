@@ -1,8 +1,8 @@
 import { ReactNode } from 'react';
 
 export const metadata = {
-    title: 'About | Xerebo Technologies',
-    description: 'Learn more about Xerebo Technologies and our mission.',
+    title: 'About Xerebo | Dubai Agency Built on Accountability & Results',
+    description: 'Tired of agencies with no accountability? Xerebo, a  Dubai growth partner with a 90-day guarantee, delivering qualified leads through proven systems.',
 };
 
 export default function AboutLayout({ children }: { children: ReactNode }) {

@@ -4,8 +4,8 @@ import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 export const metadata = {
-    title: 'Contact Us | Xerebo Technologies',
-    description: 'Get in touch with Xerebo Technologies to ignite your lead engine.',
+    title: 'Contact Xerebo | Book Your Strategy Call in Dubai',
+    description: 'Speak with Xerebo. Discover how to generate qualified leads and scale your revenue with a clear, data-driven 90-day plan',
 };
 
 export default function ContactPage() {

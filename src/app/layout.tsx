@@ -18,11 +18,28 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Xerebo | Premium Digital Experiences",
-  description: "Next-generation web applications built with precision and aesthetic excellence.",
+  title: "Xerebo | Dubai Digital Marketing Agency | Drives Real Leads",
+  description: "Tired of low-quality leads and wasted ad spend? Xerebo, a digital marketing agency in Dubai, building industry-specific systems that drive predictable revenue",
+  metadataBase: new URL('https://xerebo.com'),
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Xerebo | Dubai Digital Marketing Agency | Drives Real Leads",
+    description: "Tired of low-quality leads and wasted ad spend? Xerebo, a digital marketing agency in Dubai, building industry-specific systems that drive predictable revenue",
+    url: 'https://xerebo.com',
+    siteName: 'Xerebo Technologies',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Xerebo Technologies Preview',
+      },
+    ],
+    locale: 'en_AE',
+    type: 'website',
   },
   icons: {
     icon: "/logo.png",

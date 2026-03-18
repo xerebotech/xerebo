@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 export const metadata = {
-    title: 'Results & Success Stories | Xerebo Technologies',
-    description: 'See the impact Xerebo Technologies has delivered for our clients.',
+    title: ' Xerebo Case Studies | Real Lead Generation Results in Dubai',
+    description: ' Real results, not promises. See how Xerebo generates qualified leads, improves ROI, and builds scalable pipelines for UAE businesses.',
 };
 
 export default function ResultsPage() {

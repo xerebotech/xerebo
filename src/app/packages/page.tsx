@@ -6,8 +6,8 @@ import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 export const metadata = {
-    title: 'Packages | Xerebo Technologies',
-    description: 'View our pricing packages for your business needs.',
+    title: 'Xerebo Digital Marketing Packages in Dubai for Qualified Leads',
+    description: 'Not for everyone. Our digital marketing packages in Dubai, built for businesses ready to scale with industry-specific systems, qualified leads, and real revenue.',
 };
 
 export default function PackagesPage() {
