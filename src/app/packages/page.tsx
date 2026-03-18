@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Pricing from '@/components/Pricing';
 import Qualifier from '@/components/Qualifier';
+import PackagesFAQ from '@/components/PackagesFAQ';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
@@ -17,6 +18,7 @@ export default function PackagesPage() {
             <div>
                 <Qualifier />
                 <Pricing />
+                <PackagesFAQ />
             </div>
             <Footer />
         </main>

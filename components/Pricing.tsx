@@ -73,10 +73,11 @@ export default function Pricing() {
 
 
 
-                    <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
+                    <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] text-balance">
                         Digital Marketing Packages for<br />
                         <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent"> UAE Businesses</span>
                     </h2>
+
                     <div className="flex flex-col items-center gap-8">
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}

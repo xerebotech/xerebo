@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
-import ContactForm from '@/components/ContactForm';
-import FAQ from '@/components/FAQ';
+import ContactFormLight from '@/components/ContactFormLight';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
@@ -14,9 +13,8 @@ export default function ContactPage() {
         <main className="bg-dark-deepest">
             <Header />
             <Breadcrumbs items={[{ label: 'Contact Us' }]} />
-            <div>
-                <ContactForm />
-                <FAQ />
+            <div className="bg-[#FFF4E6] pb-24">
+                <ContactFormLight />
             </div>
             <Footer />
         </main>

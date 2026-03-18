@@ -64,7 +64,7 @@ export default function HowItWorks() {
           </motion.div>
 
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] md:leading-[0.9] text-balance">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-dark-deepest mb-8 font-heading leading-[1.1] text-balance">
             Zero to <span className="bg-gradient-to-r from-orange to-dark-deepest bg-clip-text text-transparent">Qualified Leads</span> in 30 Days.
           </h2>
           <p className="text-xl text-dark-deepest/50 leading-relaxed max-w-2xl mx-auto font-medium">
