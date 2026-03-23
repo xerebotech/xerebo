@@ -9,6 +9,9 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 export const metadata = {
     title: ' Xerebo Case Studies | Real Lead Generation Results in Dubai',
     description: ' Real results, not promises. See how Xerebo generates qualified leads, improves ROI, and builds scalable pipelines for UAE businesses.',
+    alternates: {
+        canonical: 'https://www.xerebo.com/results',
+    },
 };
 
 export default function ResultsPage() {

@@ -6,6 +6,9 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 export const metadata = {
     title: 'Contact Xerebo | Book Your Strategy Call in Dubai',
     description: 'Speak with Xerebo. Discover how to generate qualified leads and scale your revenue with a clear, data-driven 90-day plan',
+    alternates: {
+        canonical: 'https://www.xerebo.com/contact',
+    },
 };
 
 export default function ContactPage() {

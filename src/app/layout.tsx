@@ -20,7 +20,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Xerebo | Dubai Digital Marketing Agency | Drives Real Leads",
   description: "Tired of low-quality leads and wasted ad spend? Xerebo, a digital marketing agency in Dubai, building industry-specific systems that drive predictable revenue",
-  metadataBase: new URL('https://xerebo.com'),
+  metadataBase: new URL('https://www.xerebo.com'),
+  alternates: {
+    canonical: 'https://www.xerebo.com',
+  },
   robots: {
     index: true,
     follow: true,
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Xerebo | Dubai Digital Marketing Agency | Drives Real Leads",
     description: "Tired of low-quality leads and wasted ad spend? Xerebo, a digital marketing agency in Dubai, building industry-specific systems that drive predictable revenue",
-    url: 'https://xerebo.com',
+    url: 'https://www.xerebo.com',
     siteName: 'Xerebo Technologies',
     images: [
       {
