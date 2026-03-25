@@ -104,7 +104,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="block text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-1">Visit Us</span>
-                    <span className="text-white font-medium text-sm group-hover/item:text-orange transition-colors">Business Bay, Dubai</span>
+                    <span className="text-white font-medium text-sm group-hover/item:text-orange transition-colors"> Office 905, Capital Golden Tower<br />Business Bay, Dubai</span>
                   </div>
                 </a>
               </div>
