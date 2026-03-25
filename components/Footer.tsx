@@ -102,15 +102,9 @@ export default function Footer() {
                   <div className="w-10 h-10 rounded-full bg-orange/10 flex items-center justify-center text-orange group-hover/item:scale-110 transition-transform shadow-[0_0_15px_rgba(254,119,0,0.2)]">
                     <MapPin size={18} />
                   </div>
-                  <div>
-                    <span className="block text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-2">
-                      Visit Us
-                    </span>
-                  
-                    <div className="text-white font-medium text-sm leading-snug group-hover/item:text-orange transition-colors">
-                      <span className="block">Office 905, Capital Golden Tower</span>
-                      <span className="block text-gray-300">Business Bay, Dubai</span>
-                    </div>
+                  <div> 
+                    <span className="block text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-1">Visit Us</span> 
+                    <span className="text-white font-medium text-sm group-hover/item:text-orange transition-colors"> Office 905, Capital Golden Tower, Business Bay, Dubai</span> 
                   </div>
                 </a>
               </div>
