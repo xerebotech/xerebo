@@ -71,10 +71,17 @@ export default function ContactFormLight() {
                                 <h4 className="text-dark-deepest/50 text-xs uppercase tracking-widest mb-2 font-bold font-heading">Phone</h4>
                                 <a href="tel:+971501722314" className="text-dark-deepest hover:text-orange transition-colors font-medium">+971 50 172 2314</a>
                             </div>
+
+                            {/* ✅ UPDATED: Bold Stacked office address */}
                             <div className="col-span-2 sm:col-span-1">
                                 <h4 className="text-dark-deepest/50 text-xs uppercase tracking-widest mb-2 font-bold font-heading">Office</h4>
-                                <p className="text-dark-deepest/80 font-medium leading-relaxed">905, Capital Golden Tower<br />Business Bay, Dubai, UAE</p>
+                                <p className="text-dark-deepest font-bold text-sm mb-1">Xerebo Technologies L.L.C - FZ</p>
+                                <p className="text-dark-deepest/70 font-medium leading-relaxed">
+                                    Office 905, Capital Golden Tower<br />
+                                    Business Bay, Dubai, UAE
+                                </p>
                             </div>
+
                             <div>
                                 <h4 className="text-dark-deepest/50 text-xs uppercase tracking-widest mb-2 font-bold font-heading">WhatsApp</h4>
                                 <a href="https://wa.me/971501722314" className="text-dark-deepest hover:text-orange transition-colors font-medium">Message us directly</a>
@@ -95,8 +102,6 @@ export default function ContactFormLight() {
                         </div>
                     </motion.div>
                 </div>
-
-
             </div>
         </section>
     );
