@@ -95,7 +95,7 @@ export default function Footer() {
 
                 {/* ✅ UPDATED: Dot separator + 3-line address */}
                 <a
-                  href="https://www.google.com/maps/search/Business+Bay,+Dubai,+UAE"
+                  href="https://www.google.com/maps/place/?q=place_id:ChIJl4AX4yBpXz4RWTipITDQ2c8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex flex-col gap-3 group/item"
