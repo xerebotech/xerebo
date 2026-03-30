@@ -55,10 +55,9 @@ export default function Header({ heroDark = false }: HeaderProps) {
     }
   }, [mobileMenuOpen]);
 
-  // When heroDark=true and not yet scrolled → white text; once scrolled → dark text (normal)
+  // When heroDark=true and not yet scrolled → white nav text; logo stays normal always
   const navTextColor = heroDark && !isScrolled ? 'text-white hover:text-orange' : 'text-[#323939] hover:text-[#FE7700]';
   const mobileIconColor = heroDark && !isScrolled ? 'text-white hover:text-[#FE7700]' : 'text-[#323939] hover:text-[#FE7700]';
-  const logoInvert = heroDark && !isScrolled ? 'brightness-0 invert' : '';
 
   const navLinks = [
     { name: 'HOME', href: '/' },
@@ -123,7 +122,7 @@ export default function Header({ heroDark = false }: HeaderProps) {
                   src="/Xerebo Wordmark.png"
                   alt="XEREBO"
                   fill
-                  className={`object-contain object-left transition-all duration-300 ${logoInvert}`}
+                  className="object-contain object-left"
                   sizes="(max-width: 768px) 144px, 176px"
                   priority
                 />
