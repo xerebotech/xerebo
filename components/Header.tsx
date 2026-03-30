@@ -8,32 +8,21 @@ import { Menu, X, ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
 import CreativeButton from '@/components/ui/CreativeButton';
 import { useContactModal } from '@/context/ContactModalContext';
 
-export default function Header() {
+interface HeaderProps {
+  heroDark?: boolean;
+}
+
+export default function Header({ heroDark = false }: HeaderProps) {
   const { openModal } = useContactModal();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
-  // OPTION 1: Transparent → White on scroll (Current style from image)
   const headerBackground = useTransform(
     scrollY,
     [0, 50],
     ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.98)"]
   );
-
-  // OPTION 2: Always white with varying opacity
-  // const headerBackground = useTransform(
-  //   scrollY,
-  //   [0, 50],
-  //   ["rgba(255, 255, 255, 0.95)", "rgba(255, 255, 255, 1)"]
-  // );
-
-  // OPTION 3: Dark header (contrasts with white hero)
-  // const headerBackground = useTransform(
-  //   scrollY,
-  //   [0, 50],
-  //   ["rgba(26, 24, 23, 0.8)", "rgba(26, 24, 23, 0.98)"]
-  // );
 
   const headerBackdropBlur = useTransform(
     scrollY,
@@ -65,6 +54,11 @@ export default function Header() {
       document.body.style.overflow = 'unset';
     }
   }, [mobileMenuOpen]);
+
+  // When heroDark=true and not yet scrolled → white text; once scrolled → dark text (normal)
+  const navTextColor = heroDark && !isScrolled ? 'text-white hover:text-orange' : 'text-[#323939] hover:text-[#FE7700]';
+  const mobileIconColor = heroDark && !isScrolled ? 'text-white hover:text-[#FE7700]' : 'text-[#323939] hover:text-[#FE7700]';
+  const logoInvert = heroDark && !isScrolled ? 'brightness-0 invert' : '';
 
   const navLinks = [
     { name: 'HOME', href: '/' },
@@ -108,8 +102,6 @@ export default function Header() {
               <ArrowRight className="w-2 h-2 md:w-2.5 md:h-2.5" />
             </motion.button>
           </div>
-
-          {/* Decorative shimmer */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shimmer" />
         </motion.div>
 
@@ -118,7 +110,6 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="relative z-50 group">
             <div className="relative flex items-center justify-center">
-              {/* Default Wordmark (Hidden on Scroll) */}
               <motion.div
                 animate={{
                   opacity: isScrolled ? 0 : 1,
@@ -132,13 +123,12 @@ export default function Header() {
                   src="/Xerebo Wordmark.png"
                   alt="XEREBO"
                   fill
-                  className="object-contain object-left"
+                  className={`object-contain object-left transition-all duration-300 ${logoInvert}`}
                   sizes="(max-width: 768px) 144px, 176px"
                   priority
                 />
               </motion.div>
 
-              {/* Rotating Icon (Visible on Scroll) */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{
@@ -177,7 +167,7 @@ export default function Header() {
               >
                 <Link
                   href={link.href}
-                  className="text-[#323939] font-semibold hover:text-[#FE7700] transition-all duration-300 text-sm tracking-wide relative group"
+                  className={`font-semibold transition-all duration-300 text-sm tracking-wide relative group ${navTextColor}`}
                 >
                   {link.name}
                   <motion.span
@@ -185,7 +175,6 @@ export default function Header() {
                     initial={{ width: 0 }}
                     whileHover={{ width: '100%' }}
                   />
-                  {/* Hover glow */}
                   <span className="absolute -inset-2 bg-[#FE7700]/10 rounded-lg opacity-0 group-hover:opacity-100 blur transition-opacity duration-300 -z-10" />
                 </Link>
               </motion.div>
@@ -213,7 +202,7 @@ export default function Header() {
           <motion.button
             whileTap={{ scale: 0.9 }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden relative z-50 p-2 text-[#323939] hover:text-[#FE7700] transition-colors"
+            className={`md:hidden relative z-50 p-2 transition-colors ${mobileIconColor}`}
           >
             <motion.div
               animate={{ rotate: mobileMenuOpen ? 90 : 0 }}
@@ -233,7 +222,6 @@ export default function Header() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <>
-            {/* Backdrop */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -243,7 +231,6 @@ export default function Header() {
               onClick={() => setMobileMenuOpen(false)}
             />
 
-            {/* Menu Panel */}
             <motion.div
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
@@ -251,12 +238,10 @@ export default function Header() {
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
               className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-gradient-to-br from-[#F6F4F4] to-white z-40 md:hidden overflow-y-auto shadow-2xl"
             >
-              {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE7700]/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-orange-500/10 rounded-full blur-3xl" />
 
               <div className="relative h-full flex flex-col p-8 pt-24">
-                {/* Navigation Links */}
                 <nav className="flex-1 flex flex-col gap-2">
                   {navLinks.map((link, index) => (
                     <motion.div
@@ -285,7 +270,6 @@ export default function Header() {
                   ))}
                 </nav>
 
-                {/* Mobile CTA */}
                 <motion.div
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -296,7 +280,6 @@ export default function Header() {
                     Schedule a Call
                   </CreativeButton>
 
-                  {/* Contact Info */}
                   <div className="text-center pt-4 border-t border-[#323939]/10">
                     <p className="text-sm text-[#323939]/60 mb-2">Questions? We&apos;re here 24/7</p>
                     <a
