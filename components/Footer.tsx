@@ -45,8 +45,8 @@ export default function Footer() {
               {/* Social Ecosystem */}
               <div className="flex items-center gap-4">
                 {[
-                  { icon: Linkedin, href: "https://linkedin.com/company/xerebo", label: "LinkedIn" },
-                  { icon: Instagram, href: "https://instagram.com/xerebo", label: "Instagram" }
+                  { icon: Linkedin, href: "https://linkedin.com/company/teamxerebo", label: "LinkedIn" },
+                  { icon: Instagram, href: "https://instagram.com/teamxerebo", label: "Instagram" }
                 ].map((social, idx) => (
                   <motion.a
                     key={social.label}
