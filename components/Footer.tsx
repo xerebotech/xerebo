@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Linkedin, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
@@ -46,7 +46,8 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 {[
                   { icon: Linkedin, href: "https://linkedin.com/company/teamxerebo", label: "LinkedIn" },
-                  { icon: Instagram, href: "https://instagram.com/teamxerebo", label: "Instagram" }
+                  { icon: Instagram, href: "https://instagram.com/teamxerebo", label: "Instagram" },
+                  { icon: Facebook, href: "https://facebook.com/share/1BcH1VkvrW/", label: "Facebook" }
                 ].map((social, idx) => (
                   <motion.a
                     key={social.label}
