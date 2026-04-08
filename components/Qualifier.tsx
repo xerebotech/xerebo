@@ -16,7 +16,6 @@ const FOR_YOU = [
 
 const NOT_FOR_YOU = [
     "You want to micromanage post counts and blog schedules",
-    "Your monthly ad budget is below AED 11,000",
     "You need a single-channel service (just SEO or social)",
     "You expect results without a 90-day system build",
     "No designated point of contact for timely approvals",
