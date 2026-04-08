@@ -130,14 +130,14 @@ export default function Pricing() {
                             </div>
 
                             {/* Total Calculation Box */}
-                            <div className={`p-6 rounded-2xl mb-8 border ${pkg.highlight ? 'bg-white/5 border-white/10' : 'bg-orange/5 border-orange/10'
+                            {/* <div className={`p-6 rounded-2xl mb-8 border ${pkg.highlight ? 'bg-white/5 border-white/10' : 'bg-orange/5 border-orange/10'
                                 }`}>
                                 <div className="flex justify-between items-center mb-2">
                                     <span className="text-[10px] font-black uppercase tracking-widest opacity-50">Min. Ad Budget</span>
                                     <span className="text-sm font-bold">AED {pkg.minAd}/mo</span>
                                 </div>
 
-                            </div>
+                            </div> */}
 
                             {/* Features */}
                             <ul className="space-y-4 mb-10">
