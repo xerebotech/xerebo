@@ -97,10 +97,9 @@ async function detectSource(utmSource: string | undefined, baseUrl: string, apiK
     return 'Website';
 }
 
-function parseBudget(budget: string): number | undefined {
+function cleanBudget(budget: string): string | undefined {
     if (!budget) return undefined;
-    const match = budget.replace(/,/g, '').match(/(\d+)/);
-    return match ? parseInt(match[1], 10) : undefined;
+    return budget.replace(/[^\x20-\x7E]/g, '-');
 }
 
 export async function createFrappeLead(body: Record<string, any>): Promise<{ success: boolean; error?: string }> {
@@ -115,7 +114,7 @@ export async function createFrappeLead(body: Record<string, any>): Promise<{ suc
     const lastName = body.lastName || body.name?.split(' ').slice(1).join(' ') || '';
     const phone = body.phone || body.mobile || '';
     const country = await detectCountry(phone, FRAPPE_URL, FRAPPE_API_KEY, FRAPPE_API_SECRET);
-    const adBudget = parseBudget(body.budget);
+    const adBudget = cleanBudget(body.budget);
 
     const notes = [
         body.formType && `Form: ${body.formType}`,
@@ -137,12 +136,13 @@ export async function createFrappeLead(body: Record<string, any>): Promise<{ suc
         ...(body.competitorUrl ? { website: body.competitorUrl } : body.pageUrl ? { website: body.pageUrl } : {}),
         ...(body.utm_source && { custom_platform: body.utm_source }),
         ...(body.utm_medium && { custom_form_name: body.utm_medium }),
-        ...(body.utm_campaign && { campaign_name: body.utm_campaign }),
-        ...(body.utm_term && { custom_ad_set_name: body.utm_term }),
-        ...(body.utm_content && { custom_ad_name: body.utm_content }),
+        ...(body.utm_campaign && { custom_campaign: body.utm_campaign }),
+        ...(body.utm_term && { custom_adset: body.utm_term }),
+        ...(body.utm_content && { custom_ad: body.utm_content }),
         ...(body.gclid && { custom_lead_id: body.gclid }),
         ...(body.fbclid && { custom_lead_id: body.fbclid }),
-        ...(notes && { notes }),
+        ...(body.selectedPackage && { custom_button_name: body.selectedPackage }),
+        ...(notes && { custom_client_profile_and_requirement: notes }),
     };
 
     const res = await fetch(`${FRAPPE_URL}/api/resource/CRM Lead`, {
