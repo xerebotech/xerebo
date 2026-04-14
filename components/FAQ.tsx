@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 import { Plus, Minus, MessageCircle, Send, Sparkles, X } from 'lucide-react';
+import { getUTMParams } from '@/lib/utm';
 
 const faqs = [
   {
@@ -190,6 +191,8 @@ export default function FAQ() {
           email: formData.email,
           question: formData.question,
           relatedTo: selectedQuestion,
+          pageUrl: window.location.href,
+          ...getUTMParams(),
         }),
       });
       isSubmittingRef.current = false;

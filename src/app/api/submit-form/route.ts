@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { createFrappeLead } from '@/lib/frappe';
 
 export const dynamic = 'force-dynamic';
 
@@ -6,19 +7,20 @@ export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
 
-        const sheetUrl = process.env.FORM_SHEET_URL;
-        if (!sheetUrl) {
-            return NextResponse.json({ error: 'Sheet URL not configured' }, { status: 500 });
+        // Submit lead to Frappe CRM (primary)
+        const crmResult = await createFrappeLead(body);
+        if (!crmResult.success) {
+            console.error('CRM submission failed:', crmResult.error);
         }
 
-        const response = await fetch(sheetUrl, {
-            method: 'POST',
-            headers: { 'Content-Type': 'text/plain' },
-            body: JSON.stringify(body),
-        });
-
-        if (!response.ok) {
-            throw new Error(`Apps Script responded with ${response.status}`);
+        // Submit to Google Sheets (backup, fire-and-forget)
+        const sheetUrl = process.env.FORM_SHEET_URL;
+        if (sheetUrl) {
+            fetch(sheetUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain' },
+                body: JSON.stringify(body),
+            }).catch(err => console.error('Google Sheet submission failed:', err));
         }
 
         // Send WhatsApp Notification via CallMeBot

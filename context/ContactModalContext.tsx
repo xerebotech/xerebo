@@ -1,6 +1,7 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { captureUTMParams } from '@/lib/utm';
 
 interface ContactModalContextType {
     isOpen: boolean;
@@ -14,6 +15,10 @@ const ContactModalContext = createContext<ContactModalContextType | undefined>(u
 export function ContactModalProvider({ children }: { children: ReactNode }) {
     const [isOpen, setIsOpen] = useState(false);
     const [meta, setMeta] = useState<string | null>(null);
+
+    useEffect(() => {
+        captureUTMParams();
+    }, []);
 
     const openModal = (metadata?: string) => {
         setMeta(metadata || null);
