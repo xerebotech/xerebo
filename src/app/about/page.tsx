@@ -1,12 +1,12 @@
 'use client';
 
-import Header from '@/components/Header';
+import SiteHeader from '@/components/site/SiteHeader';
 import About from '@/components/About';
 import AboutPillars from '@/components/AboutPillars';
 import AboutProcess from '@/components/AboutProcess';
 import AboutValues from '@/components/AboutValues';
 import AboutTeam from '@/components/AboutTeam';
-import Footer from '@/components/Footer';
+import SiteFooter from '@/components/site/SiteFooter';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import CreativeButton from '@/components/ui/CreativeButton';
 import { ArrowRight } from 'lucide-react';
@@ -18,7 +18,7 @@ export default function AboutPage() {
 
     return (
         <main className="bg-[#fefefe]">
-            <Header />
+            <SiteHeader />
             <Breadcrumbs items={[{ label: 'About Xerebo' }]} />
 
             <About />
@@ -109,7 +109,7 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            <Footer />
+            <SiteFooter />
         </main>
     );
 }

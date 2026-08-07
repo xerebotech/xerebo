@@ -1,13 +1,12 @@
-import Header from '@/components/Header';
-import Pricing from '@/components/Pricing';
-import Qualifier from '@/components/Qualifier';
-import PackagesFAQ from '@/components/PackagesFAQ';
-import Footer from '@/components/Footer';
-import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import SiteHeader from '@/components/site/SiteHeader';
+import SiteFooter from '@/components/site/SiteFooter';
+import PricingPage from '@/components/site/pricing/PricingPage';
+import CtaBand from '@/components/site/home/CtaBand';
 
 export const metadata = {
-    title: 'Xerebo Digital Marketing Packages in Dubai for Qualified Leads',
-    description: 'Not for everyone. Our digital marketing packages in Dubai, built for businesses ready to scale with industry-specific systems, qualified leads, and real revenue.',
+    title: 'Xerebo Pricing | Growth Retainers and XEO Platform Plans',
+    description:
+        'Transparent Xerebo pricing in AED. Growth service retainers from AED 5,699 a month and XEO platform plans starting free, with a full feature comparison.',
     alternates: {
         canonical: 'https://www.xerebo.com/packages',
     },
@@ -15,15 +14,14 @@ export const metadata = {
 
 export default function PackagesPage() {
     return (
-        <main className="bg-dark-deepest">
-            <Header />
-            <Breadcrumbs items={[{ label: 'Packages' }]} />
-            <div>
-                <Qualifier />
-                <Pricing />
-                <PackagesFAQ />
-            </div>
-            <Footer />
-        </main>
+        <>
+            <SiteHeader />
+            <PricingPage />
+            <CtaBand
+                title="Still deciding which plan fits?"
+                body="Tell us the goal and the timeline. We will point you at the smallest plan that can actually get you there."
+            />
+            <SiteFooter />
+        </>
     );
 }

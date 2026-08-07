@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import SiteHeader from '@/components/site/SiteHeader';
+import SiteFooter from '@/components/site/SiteFooter';
 import { motion } from 'framer-motion';
 import { Scale, FileCheck, AlertCircle, Gavel, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -38,7 +38,7 @@ export default function TermsOfService() {
 
     return (
         <main className="min-h-screen bg-light">
-            <Header />
+            <SiteHeader />
 
             {/* Hero Header */}
             <section className="pt-40 pb-20 bg-dark-deepest relative overflow-hidden">
@@ -96,7 +96,7 @@ export default function TermsOfService() {
                 </div>
             </section>
 
-            <Footer />
+            <SiteFooter />
         </main>
     );
 }

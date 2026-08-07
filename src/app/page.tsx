@@ -1,25 +1,31 @@
-import Header from '@/components/Header';
-import Hero from "@/components/Hero";
-import SocialProofTicker from '@/components/ui/SocialProofTicker';
-import HowItWorks from "@/components/HowItWorks";
-import Footer from '@/components/Footer';
-import AgencyProblem from '@/components/AgencyProblem';
-import Pricing from '@/components/Pricing';
-import Testimonials from '@/components/Testimonials';
-import CostComparison from '@/components/CostComparison';
+import SiteHeader from '@/components/site/SiteHeader';
+import SiteFooter from '@/components/site/SiteFooter';
+import Hero from '@/components/site/home/Hero';
+import LogoMarquee from '@/components/site/home/LogoMarquee';
+import Capabilities from '@/components/site/home/Capabilities';
+import OfferingCarousel from '@/components/site/home/OfferingCarousel';
+import ProductSwitcher from '@/components/site/home/ProductSwitcher';
+import Quote from '@/components/site/home/Quote';
+import GetStarted from '@/components/site/home/GetStarted';
+import Recognition from '@/components/site/home/Recognition';
+import CtaBand from '@/components/site/home/CtaBand';
 
 export default function Home() {
   return (
-    <main>
-      <SocialProofTicker />
-      <Header />
-      <Hero />
-      <AgencyProblem />
-      <HowItWorks />
-      <Pricing />      <CostComparison />
-
-      <Testimonials />
-      <Footer />
-    </main>
+    <>
+      <SiteHeader />
+      <main>
+        <Hero />
+        <LogoMarquee />
+        <Capabilities />
+        <OfferingCarousel />
+        <ProductSwitcher />
+        <Quote />
+        <GetStarted />
+        <Recognition />
+        <CtaBand />
+      </main>
+      <SiteFooter />
+    </>
   );
 }

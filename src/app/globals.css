@@ -6,27 +6,63 @@
   --font-sans: var(--font-secondary);
   --font-secondary: var(--font-secondary);
 
+  /* Accent — the "coral" slot: highlights, flow lines, icon wells, active tabs */
   --color-orange: var(--orange);
   --color-orange-muted: var(--orange-muted);
   --color-orange-light: var(--orange-light);
+  --color-orange-deep: var(--orange-deep);
+
+  /* Ink — the "near-black" slot: filled CTAs, headings, dark sections */
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-muted: var(--ink-muted);
+
   --color-dark: var(--dark);
   --color-dark-deepest: var(--deepest);
   --color-light: var(--light);
   --color-warm-gray-200: var(--warm-gray-200);
   --color-warm-gray-300: var(--warm-gray-300);
   --color-warm-gray-500: var(--warm-gray-500);
+
+  /* Surfaces */
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-hairline: var(--hairline);
+
+  /* Support tints for card wells */
+  --color-tint-amber: var(--tint-amber);
+  --color-tint-sand: var(--tint-sand);
+  --color-tint-sky: var(--tint-sky);
+  --color-tint-mint: var(--tint-mint);
+  --color-tint-violet: var(--tint-violet);
 }
 
 :root {
   --orange: #FE7700;
   --orange-muted: #FFB366;
   --orange-light: #FFF4E6;
+  --orange-deep: #D96200;
+
+  --ink: #1A1717;
+  --ink-soft: #2C2727;
+  --ink-muted: #6B6461;
+
   --dark: #3E3939;
   --deepest: #2C2727;
   --light: #F6F4F4;
   --warm-gray-200: #E0DCDA;
   --warm-gray-300: #C7C2BF;
   --warm-gray-500: #8A8380;
+
+  --surface: #FFFFFF;
+  --surface-alt: #F7F5F4;
+  --hairline: #E6E2E0;
+
+  --tint-amber: #FFE3C2;
+  --tint-sand: #F1E7DD;
+  --tint-sky: #D9E8F5;
+  --tint-mint: #D8EEDF;
+  --tint-violet: #E4DDF5;
 }
 
 * {
@@ -38,14 +74,116 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Custom cursor takes over on fine-pointer devices. The class is added by
+   UserCursor at runtime, so no-JS and touch users keep the native cursor. */
+@media (pointer: fine) {
+  html.xerebo-cursor,
+  html.xerebo-cursor * {
+    cursor: none !important;
+  }
+}
+
 body {
   @apply font-sans;
-  color: white;
-  background-color: #0a0a0a;
+  color: var(--ink);
+  background-color: var(--surface);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Display type scale — hero and section headings */
+  .display-1 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 0.98;
+    font-size: clamp(2.75rem, 7.2vw, 6rem);
+  }
+
+  .display-2 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    line-height: 1.04;
+    font-size: clamp(2.125rem, 4.6vw, 3.75rem);
+  }
+
+  .display-3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+  }
+
+  .lede {
+    font-size: clamp(1.0625rem, 1.35vw, 1.25rem);
+    line-height: 1.6;
+    color: var(--ink-muted);
+  }
+
+  .shell {
+    width: 100%;
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  .section-y {
+    padding-block: clamp(4rem, 9vw, 8.5rem);
+  }
+
+  .hairline {
+    border-color: var(--hairline);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: 1200;
+  }
+  to {
+    stroke-dashoffset: 0;
   }
 }

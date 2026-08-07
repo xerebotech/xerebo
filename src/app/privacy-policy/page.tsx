@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import SiteHeader from '@/components/site/SiteHeader';
+import SiteFooter from '@/components/site/SiteFooter';
 import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, FileText, ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
     return (
         <main className="min-h-screen bg-light">
             {/* ✅ heroDark tells Header to use white text over the dark hero */}
-            <Header heroDark />
+            <SiteHeader />
 
             {/* Hero Header */}
             <section className="pt-40 pb-20 bg-dark-deepest relative overflow-hidden">
@@ -102,7 +102,7 @@ export default function PrivacyPolicy() {
                 </div>
             </section>
 
-            <Footer />
+            <SiteFooter />
         </main>
     );
 }

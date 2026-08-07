@@ -5,6 +5,8 @@ import "./globals.css";
 import { ContactModalProvider } from "@/context/ContactModalContext";
 import ContactModal from "@/components/ContactModal";
 import CookieBanner from "@/components/CookieBanner";
+import { CursorProvider } from "@/components/site/cursor/CursorProvider";
+import UserCursor from "@/components/site/cursor/UserCursor";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-primary",
@@ -91,9 +93,12 @@ export default function RootLayout({
           />
         </noscript>
         <ContactModalProvider>
-          {children}
-          <ContactModal />
-          <CookieBanner />
+          <CursorProvider>
+            {children}
+            <ContactModal />
+            <CookieBanner />
+            <UserCursor />
+          </CursorProvider>
         </ContactModalProvider>
       </body>
     </html>

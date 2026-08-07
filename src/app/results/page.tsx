@@ -1,9 +1,9 @@
-import Header from '@/components/Header';
+import SiteHeader from '@/components/site/SiteHeader';
 import ResultsHero from '@/components/ResultsHero';
 import CaseStudyGrids from '@/components/CaseStudyGrids';
 import ResultsCTA from '@/components/ResultsCTA';
 import Testimonials from '@/components/Testimonials';
-import Footer from '@/components/Footer';
+import SiteFooter from '@/components/site/SiteFooter';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 export const metadata = {
@@ -17,7 +17,7 @@ export const metadata = {
 export default function ResultsPage() {
     return (
         <main className="bg-[#fefefe]">
-            <Header />
+            <SiteHeader />
             <Breadcrumbs items={[{ label: 'Results' }]} />
 
             <ResultsHero />
@@ -28,7 +28,7 @@ export default function ResultsPage() {
                 <Testimonials />
             </div>
 
-            <Footer />
+            <SiteFooter />
         </main>
     );
 }
