@@ -28,6 +28,12 @@ export const PRODUCTS: NavColumn[] = [
         external: true,
       },
       {
+        name: 'Xconnect',
+        href: 'https://xconnect.xerebo.com',
+        blurb: 'Unified customer messaging and connection hub',
+        external: true,
+      },
+      {
         name: 'Xpace',
         href: '/products/xpace',
         blurb: 'ERP built for operations teams',
