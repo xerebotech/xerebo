@@ -34,10 +34,11 @@ export const PRODUCTS: NavColumn[] = [
         external: true,
       },
       {
-        name: 'Xpace',
-        href: '/products/xpace',
+        name: 'XSpace',
+        href: 'https://xspace.xerebo.com',
         blurb: 'ERP built for operations teams',
         badge: 'Coming soon',
+        external: true,
       },
       {
         name: 'Xocials',
