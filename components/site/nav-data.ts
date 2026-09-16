@@ -37,7 +37,7 @@ export const PRODUCTS: NavColumn[] = [
         name: 'XSpace',
         href: 'https://xspace.xerebo.com',
         blurb: 'ERP built for operations teams',
-        badge: 'Coming soon',
+        // badge: 'Coming soon',
         external: true,
       },
       {
