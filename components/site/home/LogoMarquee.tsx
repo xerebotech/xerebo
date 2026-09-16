@@ -53,9 +53,9 @@ function LogoItem({ client }: { client: Client }) {
  */
 const BANDS = {
   toDark:
-    'linear-gradient(180deg, #FFFFFF 0%, rgba(254,119,0,0.55) 26%, var(--orange) 42%, #7A3A00 62%, #2C2727 82%, #1A1717 100%)',
+    'linear-gradient(180deg, #FFFFFF 0%, rgba(254,119,0,0.06) 10%, rgba(254,119,0,0.18) 20%, rgba(254,119,0,0.38) 31%, rgba(254,119,0,0.66) 42%, var(--orange) 54%, #B35200 68%, #6B3200 79%, #2C2727 90%, #1A1717 100%)',
   toLight:
-    'linear-gradient(180deg, #FFFFFF 0%, rgba(254,119,0,0.5) 24%, var(--orange) 44%, #C25A00 58%, rgba(254,119,0,0.4) 76%, #FFFFFF 100%)',
+    'linear-gradient(180deg, #FFFFFF 0%, rgba(254,119,0,0.05) 9%, rgba(254,119,0,0.16) 19%, rgba(254,119,0,0.34) 30%, rgba(254,119,0,0.6) 41%, var(--orange) 52%, rgba(254,119,0,0.72) 63%, rgba(254,119,0,0.44) 73%, rgba(254,119,0,0.22) 83%, rgba(254,119,0,0.08) 92%, #FFFFFF 100%)',
 } as const;
 
 export default function LogoMarquee({ variant = 'toLight' }: { variant?: keyof typeof BANDS }) {
@@ -81,13 +81,13 @@ export default function LogoMarquee({ variant = 'toLight' }: { variant?: keyof t
       </div>
 
       {/* Gradient band, resolving into whatever section follows */}
-      <div className="relative mt-12 h-40 md:h-52">
+      <div className="relative mt-12 h-64 md:h-80">
         <div className="absolute inset-0" style={{ background: BANDS[variant] }} />
         {/* Soft bloom where the accent meets the white, as in the reference */}
         <div
-          className="absolute inset-x-0 top-[22%] h-24 blur-2xl"
+          className="absolute inset-x-0 top-[28%] h-44 blur-3xl"
           style={{
-            background: 'radial-gradient(60% 100% at 50% 50%, rgba(255,179,102,0.9) 0%, rgba(254,119,0,0) 70%)',
+            background: 'radial-gradient(85% 100% at 50% 50%, rgba(255,179,102,0.55) 0%, rgba(254,119,0,0) 78%)',
           }}
         />
       </div>
