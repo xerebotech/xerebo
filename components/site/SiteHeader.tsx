@@ -183,15 +183,6 @@ export default function SiteHeader() {
                               className="group -mx-3 block rounded-xl px-3 py-2.5 transition-colors hover:bg-orange-light"
                             >
                               <span className="flex items-center gap-2 text-[0.95rem] font-semibold text-ink">
-                                {item.logo && (
-                                  <Image
-                                    src={item.logo}
-                                    alt=""
-                                    width={22}
-                                    height={22}
-                                    className="h-[22px] w-[22px] shrink-0 rounded-md bg-black object-contain p-[3px]"
-                                  />
-                                )}
                                 {item.name}
                                 {item.badge && (
                                   <span className="rounded-full bg-orange/12 px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-orange-deep">
@@ -298,15 +289,6 @@ export default function SiteHeader() {
                                       onClick={() => setMobileOpen(false)}
                                       className="flex items-center gap-2 text-[0.95rem] text-ink"
                                     >
-                                      {item.logo && (
-                                        <Image
-                                          src={item.logo}
-                                          alt=""
-                                          width={18}
-                                          height={18}
-                                          className="h-[18px] w-[18px] shrink-0 rounded bg-black object-contain p-[2px]"
-                                        />
-                                      )}
                                       {item.name}
                                       {item.badge && (
                                         <span className="rounded-full bg-orange/12 px-2 py-0.5 text-[0.6rem] font-bold uppercase text-orange-deep">
