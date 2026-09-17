@@ -4,6 +4,8 @@ export type NavItem = {
   blurb?: string;
   badge?: string;
   external?: boolean;
+  /** Product mark shown beside the name, served from /public. */
+  logo?: string;
 };
 
 export type NavColumn = {
@@ -24,6 +26,7 @@ export const PRODUCTS: NavColumn[] = [
       {
         name: 'XEO',
         href: 'https://xeo.xerebo.com',
+        logo: '/products/xeo.png',
         blurb: 'AI search intelligence and SEO execution platform',
         external: true,
       },
@@ -34,10 +37,12 @@ export const PRODUCTS: NavColumn[] = [
         external: true,
       },
       {
-        name: 'Xpace',
-        href: '/products/xpace',
+        name: 'XSpace',
+        href: 'https://xspace.xerebo.com',
+        logo: '/products/xspace.png',
         blurb: 'ERP built for operations teams',
-        badge: 'Coming soon',
+        // badge: 'Coming soon',
+        external: true,
       },
       {
         name: 'Xocials',
