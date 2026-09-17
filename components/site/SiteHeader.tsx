@@ -189,7 +189,7 @@ export default function SiteHeader() {
                                     alt=""
                                     width={22}
                                     height={22}
-                                    className="h-[22px] w-[22px] shrink-0 object-contain"
+                                    className="h-[22px] w-[22px] shrink-0 rounded-md bg-black object-contain p-[3px]"
                                   />
                                 )}
                                 {item.name}
@@ -304,7 +304,7 @@ export default function SiteHeader() {
                                           alt=""
                                           width={18}
                                           height={18}
-                                          className="h-[18px] w-[18px] shrink-0 object-contain"
+                                          className="h-[18px] w-[18px] shrink-0 rounded bg-black object-contain p-[2px]"
                                         />
                                       )}
                                       {item.name}
